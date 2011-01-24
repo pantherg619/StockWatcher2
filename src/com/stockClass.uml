@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_71p7YCUKEeCDOqMiMcKhOw">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_78N2YCUKEeCDOqMiMcKhOw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_78Su4CUKEeCDOqMiMcKhOw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:id="_7954cCUKEeCDOqMiMcKhOw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_71s-sCUKEeCDOqMiMcKhOw" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_71tlwCUKEeCDOqMiMcKhOw" name="google">
+      <packagedElement xmi:type="uml:Package" xmi:id="_71tlwSUKEeCDOqMiMcKhOw" name="gwt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_71tlwiUKEeCDOqMiMcKhOw" name="sample">
+          <packagedElement xmi:type="uml:Package" xmi:id="_71uM0CUKEeCDOqMiMcKhOw" name="stockwatcher2">
+            <packagedElement xmi:type="uml:Package" xmi:id="_71uM0SUKEeCDOqMiMcKhOw" name="StockWatcher2">
+              <packagedElement xmi:type="uml:Package" xmi:id="_71uM0iUKEeCDOqMiMcKhOw" name="client">
+                <packagedElement xmi:type="uml:Class" xmi:id="_71uz4CUKEeCDOqMiMcKhOw" name="StockPrice">
+                  <ownedAttribute xmi:id="_78PrkCUKEeCDOqMiMcKhOw" name="symbol" visibility="private">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:id="_78T9ACUKEeCDOqMiMcKhOw" name="price" visibility="private">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:id="_78XAUCUKEeCDOqMiMcKhOw" name="change" visibility="private">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedAttribute>
+                  <ownedOperation xmi:id="_78lCwCUKEeCDOqMiMcKhOw" name="getSymbol" visibility="public">
+                    <ownedComment xmi:id="_78mQ4CUKEeCDOqMiMcKhOw">
+                      <body>/** 
+ * Gets the value of the stock symbol
+ * @return symbol
+ */
+</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_78lCwSUKEeCDOqMiMcKhOw" name="return" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_78otICUKEeCDOqMiMcKhOw" name="setSymbol" visibility="public">
+                    <ownedParameter xmi:id="_78otISUKEeCDOqMiMcKhOw" name="symbol">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_78qiUCUKEeCDOqMiMcKhOw" name="getPrice" visibility="public">
+                    <ownedParameter xmi:id="_78qiUSUKEeCDOqMiMcKhOw" name="return" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_78sXgCUKEeCDOqMiMcKhOw" name="getChangePercent" visibility="public">
+                    <ownedParameter xmi:id="_78sXgSUKEeCDOqMiMcKhOw" name="return" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_78uMsCUKEeCDOqMiMcKhOw" name="setPrice" visibility="public">
+                    <ownedParameter xmi:id="_78uMsSUKEeCDOqMiMcKhOw" name="price">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_78wB4CUKEeCDOqMiMcKhOw" name="setChange" visibility="public">
+                    <ownedParameter xmi:id="_78wB4SUKEeCDOqMiMcKhOw" name="change">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_78x3ECUKEeCDOqMiMcKhOw" name="getChange" visibility="public">
+                    <ownedParameter xmi:id="_78x3ESUKEeCDOqMiMcKhOw" name="return" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_72Q_YCUKEeCDOqMiMcKhOw" name="StockWatcher2">
+                  <ownedComment xmi:id="_72dMoCUKEeCDOqMiMcKhOw">
+                    <body>/** 
+ * Entry point classes define &lt;code>onModuleLoad()&lt;/code>.
+ */
+</body>
+                  </ownedComment>
+                  <ownedAttribute xmi:id="_783WoCUKEeCDOqMiMcKhOw" name="mainPanel" visibility="private" type="_747R0SUKEeCDOqMiMcKhOw"/>
+                  <ownedAttribute xmi:id="_79CVwCUKEeCDOqMiMcKhOw" name="stocksflexTable" visibility="private" type="_746qwCUKEeCDOqMiMcKhOw"/>
+                  <ownedAttribute xmi:id="_79KRkCUKEeCDOqMiMcKhOw" name="addPanel" visibility="private" type="_746qwSUKEeCDOqMiMcKhOw"/>
+                  <ownedAttribute xmi:id="_79RmUCUKEeCDOqMiMcKhOw" name="newSymbolTextBox" visibility="private" type="_747R0CUKEeCDOqMiMcKhOw"/>
+                  <ownedAttribute xmi:id="_79Y7ECUKEeCDOqMiMcKhOw" name="addButton" visibility="private" type="_746DtCUKEeCDOqMiMcKhOw"/>
+                  <ownedAttribute xmi:id="_79fowCUKEeCDOqMiMcKhOw" name="lastUpdateLabel" visibility="private" type="_746qwiUKEeCDOqMiMcKhOw"/>
+                  <ownedAttribute xmi:id="_79oysCUKEeCDOqMiMcKhOw" name="stocks" visibility="private" type="_79j6MCUKEeCDOqMiMcKhOw"/>
+                  <ownedAttribute xmi:id="_79-w8CUKEeCDOqMiMcKhOw" name="REFRESH_INTERVAL" visibility="private" isStatic="true" isReadOnly="true">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_79-w8SUKEeCDOqMiMcKhOw" value="5000"/>
+                  </ownedAttribute>
+                  <ownedOperation xmi:id="_7-CbUCUKEeCDOqMiMcKhOw" name="onModuleLoad" visibility="public">
+                    <ownedComment xmi:id="_7-FeoCUKEeCDOqMiMcKhOw">
+                      <body>/** 
+ * This is the entry point method.
+ */
+</body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7-GFsCUKEeCDOqMiMcKhOw" name="refreshWatchList" visibility="protected"/>
+                  <ownedOperation xmi:id="_7-LlQCUKEeCDOqMiMcKhOw" name="updateTable" visibility="private">
+                    <ownedParameter xmi:id="_7-LlQSUKEeCDOqMiMcKhOw" name="prices" type="_71uz4CUKEeCDOqMiMcKhOw">
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7-LlQiUKEeCDOqMiMcKhOw" value="*"/>
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7-LlQyUKEeCDOqMiMcKhOw"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7-PPoCUKEeCDOqMiMcKhOw" name="updateTable" visibility="private">
+                    <ownedParameter xmi:id="_7-PPoSUKEeCDOqMiMcKhOw" name="stockPrice" type="_71uz4CUKEeCDOqMiMcKhOw"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7-S6ACUKEeCDOqMiMcKhOw" name="addStock" visibility="private">
+                    <ownedComment xmi:id="_7-V9UCUKEeCDOqMiMcKhOw">
+                      <body>/** 
+ * Creates a method that display stock when button is clicked or when
+ * the enter button is selected.
+ */
+</body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7-V9USUKEeCDOqMiMcKhOw" name="getStocksflexTable" visibility="public">
+                    <ownedParameter xmi:id="_7-V9UiUKEeCDOqMiMcKhOw" name="return" type="_746qwCUKEeCDOqMiMcKhOw" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_72g3ACUKEeCDOqMiMcKhOw" name="GreetingServiceAsync">
+                  <ownedComment xmi:id="_72iFICUKEeCDOqMiMcKhOw">
+                    <body>/** 
+ * The async counterpart of &lt;code>GreetingService&lt;/code>.
+ */
+</body>
+                  </ownedComment>
+                  <ownedOperation xmi:id="_7-aOwCUKEeCDOqMiMcKhOw" name="greetServer" visibility="public">
+                    <ownedParameter xmi:id="_7-aOwSUKEeCDOqMiMcKhOw" name="input">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_7-aOwiUKEeCDOqMiMcKhOw" name="callback" type="_74-VISUKEeCDOqMiMcKhOw"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_72iFISUKEeCDOqMiMcKhOw" name="GreetingService">
+                  <ownedComment xmi:id="_72jTQCUKEeCDOqMiMcKhOw">
+                    <body>/** 
+ * The client side stub for the RPC service.
+ */
+</body>
+                  </ownedComment>
+                  <generalization xmi:id="_7-aOwyUKEeCDOqMiMcKhOw" general="_74-8MCUKEeCDOqMiMcKhOw"/>
+                  <ownedOperation xmi:id="_7-a10CUKEeCDOqMiMcKhOw" name="greetServer" visibility="public">
+                    <ownedParameter xmi:id="_7-a10SUKEeCDOqMiMcKhOw" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_7-a10iUKEeCDOqMiMcKhOw" name="return" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_74wSsCUKEeCDOqMiMcKhOw" name="core">
+          <packagedElement xmi:type="uml:Package" xmi:id="_741yQCUKEeCDOqMiMcKhOw" name="client">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_745coCUKEeCDOqMiMcKhOw" name="EntryPoint"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_745coSUKEeCDOqMiMcKhOw" name="user">
+          <packagedElement xmi:type="uml:Package" xmi:id="_746DsCUKEeCDOqMiMcKhOw" name="client">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_746DsSUKEeCDOqMiMcKhOw" name="Timer"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_746DsiUKEeCDOqMiMcKhOw" name="Window"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_746DsyUKEeCDOqMiMcKhOw" name="ui">
+              <packagedElement xmi:type="uml:DataType" xmi:id="_746DtCUKEeCDOqMiMcKhOw" name="Button"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_746qwCUKEeCDOqMiMcKhOw" name="FlexTable"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_746qwSUKEeCDOqMiMcKhOw" name="HorizontalPanel"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_746qwiUKEeCDOqMiMcKhOw" name="Label"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_746qwyUKEeCDOqMiMcKhOw" name="RootPanel"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_747R0CUKEeCDOqMiMcKhOw" name="TextBox"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_747R0SUKEeCDOqMiMcKhOw" name="VerticalPanel"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_749uESUKEeCDOqMiMcKhOw" name="Image"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_748f8iUKEeCDOqMiMcKhOw" name="Random"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_74-VICUKEeCDOqMiMcKhOw" name="rpc">
+              <packagedElement xmi:type="uml:DataType" xmi:id="_74-VISUKEeCDOqMiMcKhOw" name="AsyncCallback"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_74-8MCUKEeCDOqMiMcKhOw" name="RemoteService"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_74-8MSUKEeCDOqMiMcKhOw" name="RemoteServiceRelativePath"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_747R0iUKEeCDOqMiMcKhOw" name="event">
+          <packagedElement xmi:type="uml:Package" xmi:id="_747R0yUKEeCDOqMiMcKhOw" name="dom">
+            <packagedElement xmi:type="uml:Package" xmi:id="_74744CUKEeCDOqMiMcKhOw" name="client">
+              <packagedElement xmi:type="uml:DataType" xmi:id="_74744SUKEeCDOqMiMcKhOw" name="ClickHandler"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_74744iUKEeCDOqMiMcKhOw" name="ClickEvent"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_74744yUKEeCDOqMiMcKhOw" name="KeyCodes"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_748f8CUKEeCDOqMiMcKhOw" name="KeyPressHandler"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_748f8SUKEeCDOqMiMcKhOw" name="KeyPressEvent"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_749HACUKEeCDOqMiMcKhOw" name="i18n">
+          <packagedElement xmi:type="uml:Package" xmi:id="_749HASUKEeCDOqMiMcKhOw" name="client">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_749HAiUKEeCDOqMiMcKhOw" name="*"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_749HAyUKEeCDOqMiMcKhOw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_749HBCUKEeCDOqMiMcKhOw" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_749HBSUKEeCDOqMiMcKhOw" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_749uECUKEeCDOqMiMcKhOw" name="Date"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_79j6MCUKEeCDOqMiMcKhOw" name="ArrayList&lt;String>"/>
+</uml:Model>
